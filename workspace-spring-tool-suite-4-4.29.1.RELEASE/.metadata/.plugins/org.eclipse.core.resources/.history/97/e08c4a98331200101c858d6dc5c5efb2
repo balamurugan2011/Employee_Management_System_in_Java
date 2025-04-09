@@ -1,0 +1,18 @@
+package com.employee.management.controllers;
+
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.beans.factory.annotation.Autowired;
+import com.employee.management.repositories.EmployeeRepository;
+
+@RestController
+@CrossOrigin (origins="http://localhose:4200")
+public class EmployeeController {
+	@Autowired
+	private EmployeeRepository employeeRepository;
+	
+	public List<Employee> getAllEmployees() {
+		return employeeRepository.findAll();
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.employee.management.exceptions;
+
+import org.springframework.http.HttpStatus;
+
+public class EmployeeNotFoundException extends RuntimeException{
+	@ResponseStatus (value=HttpStatus.NOT_FOUND)
+	public EmployeeNotFoundException(String msg) {
+		super(msg);
+	}
+
+}

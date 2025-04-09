@@ -1,0 +1,1 @@
+{"net":{"http_server_properties":{"servers":[{"anonymization":["GAAAABEAAABodHRwczovL3NwcmluZy5pbwAAAA==",false],"network_stats":{"srtt":26999},"server":"https://spring.io"}],"supports_quic":{"address":"192.168.1.4","used_quic":true},"version":5},"network_qualities":{"CAISABiAgICA+P////8B":"4G"}}}

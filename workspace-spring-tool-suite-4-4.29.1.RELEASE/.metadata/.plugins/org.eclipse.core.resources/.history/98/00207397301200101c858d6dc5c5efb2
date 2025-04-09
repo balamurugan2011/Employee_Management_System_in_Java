@@ -1,0 +1,15 @@
+package com.employee.management.entities;
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
+@Entity
+@Table (name="employees")
+public class Employee {
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private int empId;
+	private String empName;
+	private String designation;
+	private double empsalary;
+	
+}
